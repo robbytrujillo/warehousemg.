@@ -46,7 +46,7 @@ if (isset($_POST['kirim'])) {
     '$_POST[ukuran]', '$_POST[id_satuan]', '$_POST[harga]')");
 
 echo "<div class='alert alert-info'>Data Tersimpan</div>";
-echo "<meta http-equiv='refresh' content='1:url=index.php?halaman=barang'>";
+echo "<meta http-equiv='refresh' content='1;url=index.php?halaman=barang'>";
 
 }
 
