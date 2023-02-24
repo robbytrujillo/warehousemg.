@@ -32,3 +32,17 @@ $hasil = $koneksi -> query("SELECT * FROM barang");
     </div>
     <button class="btn btn-primary" name="kirim">Kirim</button>
 </form>
+
+<?php
+if (isset($_POST['kirim'])) {
+    $koneksi->query("INSERT INTO data_transaksi(id_nama_barang, qty_barang_transaksi, tanggal_transaksi, status_transaksi) 
+    VALUES('$_POST[barang]', '$_POST[qty]', '$_POST[tanggal]', 
+    '$_POST[status]'");
+
+    $koneksi->query("UPDATE barang SET stok_barang = stok_barang + $_POST[qty] WHERE id_barang = $_POST[barang]");
+
+    echo "<div class='alert alert-info'>Data Tersimpan</div>";
+    echo "<meta http-equiv='refresh' content='1;url=index.php?halaman=transaksi_masuk'>";
+}
+
+?>
