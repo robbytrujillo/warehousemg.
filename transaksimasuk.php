@@ -5,7 +5,7 @@
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                             Advanced Tables <a href="index.php?halaman=tambahbarang" class="btn btn-primary">Tambah Barang</a>
+                             Advanced Tables <a href="index.php?halaman=tambahtransaksimasuk" class="btn btn-primary">Tambah Transaksi Masuk</a>
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
