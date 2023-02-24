@@ -83,9 +83,10 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                         include 'transaksimasuk.php';
                     }elseif($_GET['halaman']=='transaksikeluar') {
                         include 'transaksikeluar.php';
-                    }
-                    elseif($_GET['halaman']=='tambahbarang') {
+                    }elseif($_GET['halaman']=='tambahbarang') {
                         include 'tambahbarang.php';
+                    }elseif($_GET['halaman']=='hapusbarang') {
+                        include 'hapusbarang.php';
                     }
                     } else {
                         include 'home.php';

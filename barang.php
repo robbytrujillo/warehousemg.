@@ -39,8 +39,8 @@
                                             <td><?php echo $data['satuan_barang']; ?></td>
                                             <td><?php echo $data['harga_barang']; ?></td>
                                             <td>
-                                                <a href="#" class="btn btn-danger">Hapus</a> |
-                                                <a href="#" class="btn btn-warning">Edit</a>
+                                                <a href="index.php?halaman=hapusbarang&id=<?php echo $data['id_barang']; ?>"  class="btn btn-danger">Hapus</a> |
+                                                <a href="index.php?" class="btn btn-warning">Edit</a>
                                             </td>
                                         </tr>
                                         <?php $nomor++ ?>
