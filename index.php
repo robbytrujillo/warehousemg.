@@ -54,7 +54,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                      
 					                   
                     <li>
-                        <a href="#"><i class="fa fa-sitemap fa-3x"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-sitemap fa-3x"></i> Data Transaksi<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="index.php?halaman=transaksimasuk">Transaksi Masuk</a>
@@ -91,6 +91,8 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                         include 'editbarang.php';
                     }elseif($_GET['halaman']=='tambahtransaksimasuk') {
                         include 'tambahtransaksimasuk.php';
+                    }elseif($_GET['halaman']=='tambahtransaksikeluar') {
+                        include 'tambahtransaksikeluar.php';
                     }
                     } else {
                         include 'home.php';

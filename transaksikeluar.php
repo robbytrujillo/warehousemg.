@@ -5,7 +5,7 @@
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                             Advanced Tables <a href="index.php?halaman=tambahbarang" class="btn btn-primary">Tambah Barang</a>
+                             Advanced Tables <a href="index.php?halaman=tambahtransaksikeluar" class="btn btn-primary">Tambah Transaksi Keluar</a>
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
@@ -14,7 +14,7 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Nama Barang</th>
-                                            <th>Stok Masuk</th>
+                                            <th>Stok Keluar</th>
                                             <th>Tanggal</th>
                                         </tr>
                                     </thead>

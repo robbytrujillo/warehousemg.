@@ -1,4 +1,4 @@
-<h2>Tambah Transaksi Masuk</h2>
+<h2>Tambah Transaksi Keluar</h2>
 
 <?php
 $hasil = $koneksi -> query("SELECT * FROM barang");
@@ -24,13 +24,13 @@ $hasil = $koneksi -> query("SELECT * FROM barang");
         </select>
     </div>
     <div class="form-group">
-        <label for="">Quantity Masuk</label>
+        <label for="">Quantity Keluar</label>
         <input class="form-control" type="number" name="qty" id="">
     </div>
     <div class="form-group">
         <label for="">Tanggal</label>
         <input class="form-control" type="date" name="tanggal" value="<?php echo $tanggal ?>" id="">
-        <input type="hidden" value="masuk" name="status_transaksi">
+        <input type="hidden" value="keluar" name="status_transaksi">
     </div>
     <button class="btn btn-primary" name="kirim">Kirim</button>
 </form>
@@ -41,10 +41,10 @@ if (isset($_POST['kirim'])) {
     VALUES('$_POST[barang]', '$_POST[qty]', '$_POST[tanggal]', 
     '$_POST[status_transaksi]')");
 
-    $koneksi->query("UPDATE barang SET stok_barang = stok_barang + $_POST[qty] WHERE id_barang = $_POST[barang]");
+    $koneksi->query("UPDATE barang SET stok_barang = stok_barang - $_POST[qty] WHERE id_barang = $_POST[barang]");
 
     echo "<div class='alert alert-info'>Data Tersimpan</div>";
-    echo "<meta http-equiv='refresh' content='1;url=index.php?halaman=transaksimasuk'>";
+    echo "<meta http-equiv='refresh' content='1;url=index.php?halaman=transaksikeluar'>";
 }
 
 ?>
