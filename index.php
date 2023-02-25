@@ -65,9 +65,9 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                             
                 </ul>
             </li>
-            <li>
+            <!-- <li>
                 <a href="blank.html"><i class="fa fa-square-o fa-3x"></i>Blank Page</a>
-            </li>
+            </li> -->
             </ul>
             </div>
             
